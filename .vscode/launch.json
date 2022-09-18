@@ -16,8 +16,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/sublime codes/js codes",
-      "program": "d:/sublime codes/js codes/build/Debug/outDebug",
+      "cwd": "d:/sublime codes",
+      "program": "d:/sublime codes/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
