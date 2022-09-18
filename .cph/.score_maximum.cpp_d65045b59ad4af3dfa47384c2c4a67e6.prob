@@ -1,0 +1,1 @@
+{"name":"Local: score_maximum","url":"d:\\sublime codes\\score_maximum.cpp","tests":[{"id":1657372537609,"input":"2\n3 4 9 5","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\sublime codes\\score_maximum.cpp","group":"local","local":true}

@@ -1,0 +1,41 @@
+function add(a , b , c){
+    return a + b + c
+}
+
+let c =add(10, 20 , 30);
+console.log(c)
+
+// 7 primirtive data types are ss nn bb u
+//Symbol, string ,number, null, byte, boolean ,undefined;
+
+// like dictionary in pyton
+//objects in js
+
+const items =
+{
+    "harry": 65 , 
+    "rohan": "hello",
+    "yoi" : undefined
+}
+console.log(items["ryoi"])
+items1 =
+{
+    "harry": 65 , 
+    "rohan": "hello",
+    "yoi" : undefined
+}
+console.log(items1.harry)
+
+// string concatinate
+
+let a = "amit"
+let b = 6   
+console.log(a + b)
+
+// let z= prompt("enter age") //promts input , it will be string 
+// z = Number.parseInt(z) // sting will be converted to integer
+// alert("hello")
+
+console.log("hello me")
+
+345

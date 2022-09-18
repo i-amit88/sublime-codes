@@ -1,0 +1,1 @@
+{"name":"Local: gcd_query_ep14_luv","url":"d:\\sublime codes\\cp\\gcd_query_ep14_luv.cpp","tests":[{"id":1655671962234,"input":"1\n3 3\n2 6 9\n1 1\n2 2\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\sublime codes\\cp\\gcd_query_ep14_luv.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: shortest_common_supersequence","url":"d:\\sublime codes\\shortest_common_supersequence.cpp","tests":[{"id":1654959011772,"input":"geek\neke","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\sublime codes\\shortest_common_supersequence.cpp","group":"local","local":true}
