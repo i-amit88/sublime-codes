@@ -1,0 +1,48 @@
+/* h1{
+    color: blueviolet;
+} */
+
+p,a{
+    color: cornflowerblue;
+}
+
+/* a{
+    color: fuchsia;
+} */
+
+li{
+    list-style-type: upper-latin;
+}
+
+.special{           /*class name*/
+    color: darkblue;
+    font-weight: 800;
+}
+
+h1.special,li.special{
+    color: blueviolet;
+}
+
+li em{
+    color: gold;
+}
+
+a:hover{
+    color: rgb(123, 75, 59);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(88, 38, 38)
+}
+
+li[class]{
+    font-size: 200%;
+}
+
+li[class~=a]{
+    font-size: 300%;
+}
+
+p::first-line{
+    color: aquamarine;
+}
