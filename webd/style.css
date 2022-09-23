@@ -10,17 +10,21 @@ p,a{
     color: fuchsia;
 } */
 
+/* for all the li items */
 li{
-    list-style-type: upper-latin;
+    list-style-type:georgian;
+    right: 40cm;
+    
 }
 
 .special{           /*class name*/
-    color: darkblue;
+    color:bisque;
     font-weight: 800;
 }
+/* specially for one */
 
-h1.special,li.special{
-    color: blueviolet;
+h1.special,li.special{  
+    color:cadetblue;
 }
 
 li em{
