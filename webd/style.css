@@ -64,9 +64,13 @@ p::first-line{
 
 /* nesting of selectors  in id second find h2 and change color */
 #second>h2{
-    color: lime;
+    color: lime !important;
 }
-
+/* importatnt make no changes to that specific */
 #second>p>span{
     color: orange;
+}
+
+h2{
+    color:brown;
 }
