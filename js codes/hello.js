@@ -53,3 +53,6 @@ console.log(sum( 1 , 2))
 let boy1 = "nikhil"
 let boy2 = "parmod"
 console.log(`${boy1} is  a friend of ${boy2}`)
+
+let fruit = 'bana\'na' // \' are the escape characters  \n \r
+console.log(fruit)
