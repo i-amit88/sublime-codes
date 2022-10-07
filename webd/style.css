@@ -5,6 +5,9 @@
 p,a{
     color: cornflowerblue;
 }
+p>em{
+    color:darkcyan;
+}
 
 /* a{
     color: fuchsia;
@@ -12,14 +15,14 @@ p,a{
 
 /* for all the li items */
 li{
-    list-style-type:georgian;
+    list-style-type:lower-alpha;
     right: 40cm;
     
 }
 
 .special{           /*class name*/
-    color:bisque;
-    font-weight: 800;
+   
+    font-weight: 400;
 }
 /* specially for one */
 
@@ -27,7 +30,7 @@ h1.special,li.special{
     color:cadetblue;
 }
 
-li em{
+li>em{
     color: gold;
 }
 
