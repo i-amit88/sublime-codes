@@ -30,7 +30,7 @@ class Square extends Shape {
         System.out.println("square shape");
     }
     /*jvm will first check if overrring method is present in super class also or not if not then error
-     super class h the overriding method then will go to the sub class otherwise superclass ones method as referencre is for the super class*/
+     super class has  the overriding method then will go to the sub class otherwise superclass ones method as referencre is for the super class*/
 
 
 }
