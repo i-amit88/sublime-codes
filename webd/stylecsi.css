@@ -1,0 +1,36 @@
+.navbar h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+}
+
+.navbar a:hover{
+    color: blue;
+}
+.navbar ul{
+    text-align: right;
+    background-color:lightyellow;
+}
+.navbar li{
+    display: inline-block;
+    
+}
+.navbar a{
+    display:block;
+    padding:0px 0px;
+}
+body{
+    background-color:white;
+}
+.navbar ul>img{
+    float: left;
+    
+    padding: 0;
+    margin: 0;
+}
+.navbar p{
+    text-align: center;
+}
+#side{
+    text-align: right;
+}
