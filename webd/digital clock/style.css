@@ -1,0 +1,53 @@
+
+body{
+
+    margin: 0;
+    height: 100vh;
+    
+    position:relative ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://d3rf6j5nx5r04a.cloudfront.net/LT4Nplyja9pgB7y_3K3RNA0kO6o=/1200x900/product/3/c/fc038ce5d21f4a56b138d0a9fcdb6180_opt.jpg);
+    background-size: cover;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:darkblue;
+    font-size: 32px;
+}
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin:5px;
+    position: relative;
+}
+.clock span{
+    background: slateblue;
+    opacity: .8;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+
+.clock #text{
+    font-size: 15px;
+    height: 30px;
+    background-color: darkblue;
+}
+.clock .ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: green;
+    font-size: 20px;
+}
