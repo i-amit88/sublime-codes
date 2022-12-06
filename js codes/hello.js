@@ -39,20 +39,41 @@
 // console.log("hello me")
 
 // 345
-const hello = () => {
-    console.log("heloo")
-}  
+// const hello = () => {
+//     console.log("heloo")
+// }  
 
-hello()
+// hello()
 
-const sum = (p , q) => {
-    return p + q
+// const sum = (p , q) => {
+//     return p + q
+// }
+
+// console.log(sum( 1 , 2))
+// let boy1 = "nikhil"
+// let boy2 = "parmod"
+// console.log(`${boy1} is  a friend of ${boy2}`)
+
+// let fruit = 'bana\'na' // \' are the escape characters  \n \r
+// console.log(fruit)
+
+function x(){
+    for (let i = 1 ; i <= 5 ; i++){
+        setTimeout(function (){
+            console.log(i)
+        },i * 1000)
+    }
+    console.log("NAMASTE JAVASCRIPT")
+}
+x();
+
+
+
+function x(y){
+    console.log("y")
+    y();
 }
 
-console.log(sum( 1 , 2))
-let boy1 = "nikhil"
-let boy2 = "parmod"
-console.log(`${boy1} is  a friend of ${boy2}`)
-
-let fruit = 'bana\'na' // \' are the escape characters  \n \r
-console.log(fruit)
+x(function y(){
+    console.log("x")
+})
