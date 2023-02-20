@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.forgot{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: centre;
+    height: 100px;
+    width: auto 0 auto 0;
+
+}
+.parent {
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: centre;
+}
+.parent h3{
+    padding-bottom: 10px;
+}
+.forgot p{
+    padding-right: 10px;;
+}
+.btn{
+    position: absolute;
+    top: 60px;
+    right:30%;
+       
+}
