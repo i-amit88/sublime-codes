@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
 
 }
 
@@ -17,7 +17,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: centre;
-    height: 100px;
+    background-color:#F0EEED;
+    height: 100vh;
+    width: auto 0 auto 0;
+
+}
+.container2{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: centre;
+    background-color:#F0EEED;
+    height: 100vh;
     width: auto 0 auto 0;
 
 }
@@ -38,4 +50,23 @@
     top: 60px;
     right:30%;
        
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.together{
+    display:inline-flex;
+}
+.together p{
+    margin:3px;
+    padding-right: 7px;
+}
+.down{
+    padding-top: 20px;
+}
+
+.login button{
+
 }

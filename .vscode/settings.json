@@ -49,5 +49,6 @@
       "username": "amit",
       "password": "gjhrG9@1"
     }
-  ]
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false
 }
