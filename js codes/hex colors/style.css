@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald&display=swap');
+
+body{
+    font-family: 'Comfortaa', cursive;;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+    /* text-align: center; */
+
+}
+
+.hex-color{
+    text-align: center;
+}
+
+.hex-color h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    animation: changecolor 5s infinite alternate;
+}
+.hex-color h2{
+    margin-top: 15%;
+    font-size: 2rem;
+
+}
+
+@keyframes changecolor {
+    0%{
+        color: blue;
+        
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color:darkgreen;
+    }
+    80%{
+        color: orange;
+    }
+    100%{
+        color: indigo;
+    }
+
+}
+    @media (max-width:480px) {
+        .hex-color h1{
+            font-size:1.5rem;
+        }
+
+        .hex-color h2{
+            font-size:1.5rem;
+        }
+    }
