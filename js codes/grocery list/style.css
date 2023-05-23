@@ -64,8 +64,8 @@ body{
     .groceries input{
         font-size: 1rem;
     }
-    .allitems h1{
-        font-size: 1.5rem;
+    .allitems h2{
+        font-size: 1rem;
         margin-left: 25px;
     }
 }
