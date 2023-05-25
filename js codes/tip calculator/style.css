@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:conic-gradient(at 125% 50%, #b78cf7,#ff7c94,#ffcf08,#ff7c94,#b78cf7);
+
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:95%;
+    margin: auto;
+    height: 100vh;
+}
+
+.calculator{
+    width: 400px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 0 40px;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0 , 0.5);
+}
+
+.calculator input{
+    box-sizing: border-box;
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.calculator button{
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid lightgray;
+    width: 10%;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.calculator button:hover{
+    background-color: rgba(0, 0, 0 , 0.1);
+}
+
+#quality{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline:0;
+}
+
+#tip-amount{
+    visibility: hidden;
+    min-width: 245px;
+    background-color: limegreen;
+    color: white;
+    margin: auto;
+    bottom:30px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+
+}
+
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+    from{bottom:0; opacity:0;}
+    to{bottom: 30px;opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    from{bottom:30px; opacity:1;}
+    to{bottom: 0; opacity: 0;}
+}
+@keyframes fadeout{
+    from{bottom:30px; opacity:1;}
+    to{bottom: 0; opacity: 0;}
+}
+
+@media (max-width:480px) {
+    .calculator button{
+        width:15%;
+    }
+    
+    .calculator input{
+        width:85%;
+    }
+}
+
+@media (max-width:320px) {
+    .calculator input{
+        width:80%;
+        
+    }
+    .calculator button{
+        width:20%;
+    }
+    
+}
