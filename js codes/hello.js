@@ -57,23 +57,54 @@
 // let fruit = 'bana\'na' // \' are the escape characters  \n \r
 // console.log(fruit)
 
-function x(){
-    for (let i = 1 ; i <= 5 ; i++){
-        setTimeout(function (){
-            console.log(i)
-        },i * 1000)
+// function x(){
+//     for (let i = 1 ; i <= 5 ; i++){
+//         setTimeout(function (){
+//             console.log(i)
+//         },i * 1000)
+//     }
+//     console.log("NAMASTE JAVASCRIPT")
+// }
+// x();
+
+
+
+// function x(y){
+//     console.log("y")
+//     y();
+// }
+
+// x(function y(){
+//     console.log("x")
+// })
+
+
+let cart = ["shoes" , "pants", "shirts"];
+
+const promise = createOrder(cart);
+
+promise.then(function(orderId){
+  console.log(orderId);
+  // proceedtopayment(orderId);
+});
+
+
+function createOrder(cart){
+  const pr = new Promise(function (resolve,reject) {
+      if(!validateCart(cart)){
+        const err = new Error("cart is not valid");
+        reject(err);
+        
+      }
+    const orderId= "123456";
+    if(orderId){
+      resolve(orderId);
     }
-    console.log("NAMASTE JAVASCRIPT")
-}
-x();
 
-
-
-function x(y){
-    console.log("y")
-    y();
+    return pr;
+  });
 }
 
-x(function y(){
-    console.log("x")
-})
+function validateCart(cart){
+  return true;
+}

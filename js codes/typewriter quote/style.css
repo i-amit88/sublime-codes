@@ -1,0 +1,23 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    letter-spacing: 2px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: #EFDECD;
+    color: #3D2B1F;
+    text-shadow: 0 0 10px black;
+}
+
+span{
+    animation: blinker 1s linear infinite;
+
+}
+
+@-webkit-keyframes{
+    .span{
+        50%{
+        opacity: 0;
+    }
+    }
+}
