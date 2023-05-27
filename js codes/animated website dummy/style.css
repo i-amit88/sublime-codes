@@ -1,0 +1,193 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+#header{
+    min-height: 70px;
+    border: 1px solid black;
+}
+
+#home,#about,#contact{
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.animated{
+    width: 400px; 
+    height: 221px;
+    background-position: center;  
+    background-size: cover;  
+    
+
+}
+
+.fadeInLeft{
+    background-image: url(https://jooinn.com/images/beautiful-scenery-1.jpg);
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+
+}
+.fadeInTop{
+    background-image: url(https://jooinn.com/images/beautiful-scenery-7.jpg);
+    -webkit-animation: fadeInTop 1.2s both;
+    -moz-animation: fadeInTop 1.2s both;
+    -o-animation: fadeInTop 1.2s both;
+    animation: fadeInTop 1.2s both;
+
+}
+.fadeInRight{
+    background-image: url(http://3.bp.blogspot.com/_3-JJBgMWd1k/TRA_wcoaXFI/AAAAAAAAABk/7dFjntA95fA/s1600/Beautiful+Scenes+of+Rainbow.jpg);
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+
+}
+
+@-webkit-keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@-moz-keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@-o-keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+}
+@-moz-keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+}
+@-webkit-keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+}
+@-o-keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@-webkit-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@-moz-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
+@-o-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform:translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+
+}
