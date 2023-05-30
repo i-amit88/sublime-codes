@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@300&family=Oswald&family=Poppins:wght@300&family=Roboto+Mono:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Comfortaa', cursive;
+
+}
+h1{
+    text-align: center;
+    padding: 40px;
+    /* border: 1px solid black; */
+    font-size: 4rem;
+}
+
+.countdown{
+    width: 95%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.days{
+    /* border: 1px solid black; */
+    width:25%;
+    font-size: 2rem;
+    
+}
+.hours{
+    /* border: 1px solid black; */
+    width:25%;
+    font-size: 2rem;
+
+}
+.minutes{
+    /* border: 1px solid black; */
+    width:25%;
+    font-size: 2rem;
+
+}
+.seconds{
+    /* border: 1px solid black; */
+    width:25%;
+    font-size: 2rem;
+
+}
+
+.big-text{
+    text-align: center;
+    padding-bottom: 20px;
+    /* border: 1px solid black; */
+    font-size: 6rem;
+}
+
+.countdown span{
+    text-align: center;
+   
+}
+
+.try {
+   width: 100%;
+   text-align: center;
+}
+
+
+@media (max-width:768px) {
+    .big-text{
+        font-size: 2rem;
+    }
+    .try{
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:480px) {
+    .big-text{
+        font-size: 1rem;
+    }
+    .try{
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
