@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+}
+
+*{
+    outline: none;
+}
+
+*:not(.slick-track):not(.slick-list){
+    transition:0.4s;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.flex{
+    display: felx;
+    justify-content: space-between;
+}
+
+h1 , h2, h3, h4, h5{
+    margin: 0;
+    padding:0;
+}
+
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #f69314;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+p{
+    margin: 0 0 1rem;
+}
+
+button.rounded{
+    background:#f69314;
+    border: none;
+    color:#fff;
+    font-size: 16px;
+    border-radius:30px;
+    padding:10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+p.large-paragraph{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#header-hero-container{
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+header{
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color:#fff;
+    text-decoration: none;
+    position:relative;
+    top:4px;
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.hamburger-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+header ul{
+    
+}
