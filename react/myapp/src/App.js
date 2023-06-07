@@ -10,8 +10,8 @@ import "./styles/App.scss"
 import "./styles/header.scss"
 import "./styles/Home.scss"
 import "./styles/footer.scss"
-import "./styles/services.scss"
 import "./styles/Contact.scss"
+import "./styles/mediaquery.scss"
 
 function App() {
   return (
