@@ -79,32 +79,76 @@
 // })
 
 
-let cart = ["shoes" , "pants", "shirts"];
+// let cart = ["shoes" , "pants", "shirts"];
 
-const promise = createOrder(cart);
+// const promise = createOrder(cart);
 
-promise.then(function(orderId){
-  console.log(orderId);
-  // proceedtopayment(orderId);
-});
+// promise.then(function(orderId){
+//   console.log(orderId);
+//   // proceedtopayment(orderId);
+// });
 
 
-function createOrder(cart){
-  const pr = new Promise(function (resolve,reject) {
-      if(!validateCart(cart)){
-        const err = new Error("cart is not valid");
-        reject(err);
+// function createOrder(cart){
+//   const pr = new Promise(function (resolve,reject) {
+//       if(!validateCart(cart)){
+//         const err = new Error("cart is not valid");
+//         reject(err);
         
-      }
-    const orderId= "123456";
-    if(orderId){
-      resolve(orderId);
-    }
+//       }
+//     const orderId= "123456";
+//     if(orderId){
+//       resolve(orderId);
+//     }
 
-    return pr;
+//     return pr;
+//   });
+// }
+
+// function validateCart(cart){
+//   return true;
+// }
+ // get method ...............................................................>
+
+const url = 'https://jsonplaceholder.typicode.com/users'
+
+const myaxios = (method , url , body = null) => {
+  return fetch(url)
+  .then((res) =>{
+    return res.json();
   });
 }
 
-function validateCart(cart){
-  return true;
-}
+myaxios('GET',url).then((res) => {
+  console.log(res);
+  // console.log(res[0].name);
+
+}).catch((err) =>{
+  console.log(err)
+})
+ 
+
+
+//  post  method
+// const url = 'https://jsonplaceholder.typicode.com/users'
+
+// const myaxios = (method , url , body = null) => {
+
+//   const headers = {
+//     'Content-Type':'application/json',
+//   }
+
+//   return fetch(url,{
+//     method:method,      // will get from  function that it is get or post
+//     headers:headers,
+//     body:JSON.stringify(body) 
+//   }).then((res) =>{
+//     return res.json();
+//   });
+// }
+// myaxios('POST',url,{name:'rakesh',job:'software developer'}).then((res) => {
+//   console.log(res);
+
+// }).catch((err) =>{
+//   console.log(err)
+// })
