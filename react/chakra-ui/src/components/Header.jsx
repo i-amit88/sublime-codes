@@ -48,10 +48,10 @@ function Header() {
 
                 <HStack position={'absolute'} bottom={'10'} left={'0'} w={'full'} justifyContent={'space-evenly'}>
                     <Button colorScheme='purple' onClick={onClose}>
-                        <Link >Log In</Link>
+                        <Link to={'login'} >Log In</Link>
                     </Button>
                     <Button colorScheme='purple' variant={'outline'}  onClick={onClose}>
-                        <Link >Sign Up</Link>
+                        <Link to={'/signup'}>Sign Up</Link>
                     </Button>
                 </HStack>
             </DrawerBody>
