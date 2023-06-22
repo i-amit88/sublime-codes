@@ -1,5 +1,4 @@
 import { Box, Spinner, VStack } from '@chakra-ui/react'
-import { Scale } from 'chart.js'
 import React from 'react'
 
 function Loader() {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { server } from '../index'
-import { Button, Container, HStack, Heading, Image, Radio, RadioGroup, Text, VStack } from '@chakra-ui/react';
+import { Button, Container, HStack, Radio, RadioGroup } from '@chakra-ui/react';
 import Loader from './Loader';
 import ErrorComponent from './ErrorComponent';
 import CoinCard from './CoinCard';
@@ -31,7 +31,6 @@ function Coins() {
                 const {data} = await axios.get(`${server}/coins/markets?vs_currency=${currency}&page=${page}`);
             setCoins(data);
             setLoading(false);
-            console.log(data);
             } catch (error) {
                 setLoading(false);
                 setError(true);
@@ -41,13 +40,13 @@ function Coins() {
     },[currency,page]);
 
 
-    if(error) return <ErrorComponent message={'error while fetching coins'}/>
+    if(error) return <ErrorComponent message={'error while Fetching coins'}/>
 
   return (
     <Container maxW={'container.xl'}>{loading? <Loader /> :(
       <>
 
-      <RadioGroup value={currency} onChange={setCurrency}>
+      <RadioGroup value={currency} onChange={setCurrency} p={'8'}>
         <HStack spacing={'4'}>
           <Radio value="inr">INR</Radio>
           <Radio value="usd">USD</Radio>
@@ -55,7 +54,7 @@ function Coins() {
         </HStack>
       </RadioGroup>
 
-    <HStack  wrap={'wrap'}>{coins.map((i) =>(
+    <HStack  wrap={'wrap'} justifyContent={'space-evenly'}>{coins.map((i) =>(
        <CoinCard 
        id={i.id}
        key={i.id}
@@ -72,6 +71,7 @@ function Coins() {
         {
           btns.map((item,index)=>(        
             <Button 
+            key={index}
             bgColor={'blackAlpha.900'} 
             color={'white'} 
             onClick={()=>changePage(index+1)}
