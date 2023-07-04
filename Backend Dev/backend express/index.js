@@ -28,21 +28,23 @@ app.get("/",(req, res)=>{    // requesting from server
     res.sendFile(path.join(__dirname+"/index.html"));  // res is sending the response
 });
 
-// app.post("/login",async (req,res)=>{    //post is sending the data to the server at specified location which action specifies
-//     console.log("response got"),
-//     res.send("<h1>Done</h1>"),
-//     console.log(req.body),
+app.post("/login",async (req,res)=>{    //post is sending the data to the server at specified location which action specifies
+    console.log("response got"),
+    res.cookie("new-token","logged in"),
+    res.send("<h1>Cookie saved</h1>")
     
-//      await new_collection.create({
-//         name:req.body.name,
-//         email:req.body.email,
-//         password:req.body.password,
+    console.log(req.body),
+    
+     await new_collection.create({
+        name:req.body.name,
+        email:req.body.email,
+        password:req.body.password,
 
-//     })
-//     console.log(req.body.name);
-//     console.log(req.body.email);
-//     console.log(req.body.password);
-// })
+    })
+    console.log(req.body.name);
+    console.log(req.body.email);
+    console.log(req.body.password);
+})
 
 
 app.post("/login",(req,res)=>{
@@ -53,7 +55,7 @@ app.post("/login",(req,res)=>{
 
 
 
-// const new_collection = new mongoose.model("newModel",schema);
+const new_collection = new mongoose.model("newModel",schema);
 
 // const adder = async ()=>{
 //     const ss = await new_collection.create({
