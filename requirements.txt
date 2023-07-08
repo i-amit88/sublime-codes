@@ -1,0 +1,7 @@
+openai 
+pytelegrambotapi 
+python-dotenv 
+gunicorn 
+langchain 
+chromadb 
+pypdf 
