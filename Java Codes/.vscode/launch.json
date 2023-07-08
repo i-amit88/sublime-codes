@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Account",
+            "request": "launch",
+            "mainClass": "Account",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Combinations",
+            "request": "launch",
+            "mainClass": "Combinations",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "ConversionFloatFloatString",
+            "request": "launch",
+            "mainClass": "ConversionFloatFloatString",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "ConversionIntIntegerString",
+            "request": "launch",
+            "mainClass": "ConversionIntIntegerString",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "Demo",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Framework",
+            "request": "launch",
+            "mainClass": "Framework",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Handling",
+            "request": "launch",
+            "mainClass": "Handling",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "LowerUpper",
+            "request": "launch",
+            "mainClass": "LowerUpper",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "MyClass",
+            "request": "launch",
+            "mainClass": "MyClass",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "Squares",
+            "request": "launch",
+            "mainClass": "Squares",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "ToTestInt",
+            "request": "launch",
+            "mainClass": "ToTestInt",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "abc",
+            "request": "launch",
+            "mainClass": "abc",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "calculate",
+            "request": "launch",
+            "mainClass": "calculate",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "calculator",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "calender",
+            "request": "launch",
+            "mainClass": "calender",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "divisibe",
+            "request": "launch",
+            "mainClass": "divisibe",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "knapsack",
+            "request": "launch",
+            "mainClass": "knapsack",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "largest",
+            "request": "launch",
+            "mainClass": "largest",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "leapyear",
+            "request": "launch",
+            "mainClass": "leapyear",
+            "projectName": "Java Codes_4fca9055"
+        },
+        {
+            "type": "java",
+            "name": "occurance",
+            "request": "launch",
+            "mainClass": "occurance",
+            "projectName": "Java Codes_4fca9055"
+        }
+    ]
+}

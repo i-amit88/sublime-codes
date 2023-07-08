@@ -8,13 +8,11 @@ public class knapsack {
         }
 
         if (wt[n - 1] <= w) {
-            return Math.max(val[n - 1] + knapsackF(wt, val, w - 1, n - 1), knapsackF(wt, val, w, n - 1));
+            return Math.max(val[n - 1] + knapsackF(wt, val, w - wt[n - 1], n - 1), knapsackF(wt, val, w, n - 1));
 
-        } else if (wt[n - 1] > w) {
+        } else {
             return knapsackF(wt, val, w, n - 1);
         }
-
-        return 0;
     }
 
     public static void main(String[] args) {
