@@ -1,70 +1,35 @@
 import express from "express";
-import mongoose from "mongoose";
+import userRouter from "./routes/user.js";
+import taskRouter from "./routes/task.js";
+import { config } from "dotenv";
+import cookieParser from "cookie-parser";
+import { errorMiddleware } from "./middlewares/error.js";
+import cors from "cors";
 
-const app = express();
+export const app = express();
 
+config({
+  path: "./data/config.env",
+});
+
+// Using Middlewares
 app.use(express.json());
-mongoose.connect("mongodb://127.0.0.1:27017",{dbName:"api-demo"}).then(()=>{
-    console.log("connection successfull")
-}).catch((err)=>{
-    console.log(err);
+app.use(cookieParser());
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
+// Using routes
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/task", taskRouter);
+
+app.get("/", (req, res) => {
+  res.send("Nice working");
 });
 
-const Schema = new mongoose.Schema({
-    name:String,
-    email:String,
-    password:String,
-});
-
-const User = mongoose.model("api-model",Schema);
-
-app.get("/",(req,res)=>{
-    res.send("Nice Working");
-});
-app.get("/userid",async (req,res)=>{
-    const {id} = req.body;
-    const user = await User.findById(id);
-    res.json({
-        success:true,
-        user,
-    })
-});
-app.get("/userid/:id",async (req,res)=>{
-    const {id} = req.body;
-    console.log(req.params);
-    const user = await User.findById(id);
-    res.json({
-        success:true,
-        user,
-    })
-});
-app.get("/users/all",async (req,res)=>{
-
-    console.log(req.query);
-    console.log(req.query.keyword);
-
-    const users = await User.find({});
-    res.json({
-        success:true,
-        users: users,
-    })
-});
-app.post("/users/new",async (req,res)=>{
-
-    const {name,email,password} = req.body;
-
-    const users = await User.create({
-       name,
-       email,
-       password,
-    })
-    res.cookie("tempi","newcookie").json({
-        success:true,
-        message:"Registered successfully"
-    });
-});
-
-
-app.listen(4000,()=>{
-    console.log("server is running");
-});
+// Using Error Middleware
+app.use(errorMiddleware);
