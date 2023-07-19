@@ -22,6 +22,8 @@ function Home() {
         });
     };
 
+// use slices it reduces the type
+
 
   return (
     <>

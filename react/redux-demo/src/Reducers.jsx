@@ -13,3 +13,5 @@ export const customReducer = createReducer(initalState,{  //create reducer take 
         state.a -= 1;
     }
 })
+// createSlice is the function to create reducer
+//Async Thunk
