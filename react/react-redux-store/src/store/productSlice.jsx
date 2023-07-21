@@ -38,4 +38,4 @@ export function fetchProducts() {
             dispatch(setStatus(STATUSES.ERROR));
         }
     }
-}
+};
