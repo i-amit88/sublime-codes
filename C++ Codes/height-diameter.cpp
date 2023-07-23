@@ -12,7 +12,6 @@ struct Node{
     }
 };
 
-
 int heightCalc(Node* root){
 
     if(root == NULL) return 0;
