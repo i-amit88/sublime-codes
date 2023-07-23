@@ -21,10 +21,22 @@ int heightCalc(Node* root){
 
     return max(heightCalc(root->left),heightCalc(root->right)) + 1;
 }
+int ans = 0;
+int DiameterCalc(Node* root){
+    if(root == NULL){
+        return 0;
+    }
+    int lHeigth = heightCalc(root->left);
+    int rHeigth = heightCalc(root->right);
+    // int currDiameter = lHeigth + rHeigth + 1;
 
+    // int lDiameter = DiameterCalc(root->left);
+    // int rDiameter = DiameterCalc(root->right);
 
-
-
+    // return max(currDiameter,max(lDiameter,rDiameter));
+    ans= max(ans,1+lHeigth+rHeigth);
+    return 1 + max(lHeigth,rHeigth);
+}
 
 int32_t main(){
 
@@ -35,8 +47,9 @@ int32_t main(){
     root->left->right=new Node(5);
     root->right->left=new Node(6);
     root->right->right=new Node(7);
-
-    cout<< "Height of the tree is : "<<heightCalc(root);
-
+    // cout<< "Height of the tree is : "<<heightCalc(root)<<endl;
+    // cout<<"Diameter of the tree is : "<<DiameterCalc(root);
+    cout<< "Height of the tree is : "<<DiameterCalc(root)<<endl;
+    cout<<"Diameter of the tree is : "<<ans;
     return 0;
 }
