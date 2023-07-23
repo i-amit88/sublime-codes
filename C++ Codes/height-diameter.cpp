@@ -29,6 +29,7 @@ int DiameterCalc(Node* root){
     int lHeigth = heightCalc(root->left);
     int rHeigth = heightCalc(root->right);
 
+
     //O(n^2)
     // int currDiameter = lHeigth + rHeigth + 1;
 
