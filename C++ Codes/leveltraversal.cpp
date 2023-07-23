@@ -13,6 +13,39 @@ struct node{
     }
 };
 
+int sumAtK(node* newnode,int k){
+
+    if(newnode == NULL){
+        return -1;
+    }
+    int sum=0,level=0;
+    
+    queue<node*>q;
+    q.push(newnode);
+    q.push(NULL);
+
+    while (!q.empty())
+    {
+        node* root = q.front();
+        q.pop();
+
+        if(root != NULL){
+            if(level == k) sum+=root->data;
+            if(root->left) q.push(root->left);
+            if(root->right) q.push(root->right);
+
+        }
+        else if(!q.empty()){
+            q.push(NULL);
+            level++;
+        }
+
+
+
+    }
+    return sum;
+    
+}
 void levelorder(node* root){
 
         queue<node*>q;
@@ -33,12 +66,9 @@ void levelorder(node* root){
                 }
 
             }else if(!q.empty()){
-
                 q.push(NULL);
-
             }
         }
-
 }
 
 int  main(){
@@ -51,6 +81,8 @@ int  main(){
     root->right->right=new node(7);
 
     levelorder(root);
+    cout<<endl;
+    cout<<"SUM is : "<<sumAtK(root,1);
 
 
 }
