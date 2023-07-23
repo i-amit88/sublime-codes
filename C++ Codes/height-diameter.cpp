@@ -28,12 +28,16 @@ int DiameterCalc(Node* root){
     }
     int lHeigth = heightCalc(root->left);
     int rHeigth = heightCalc(root->right);
+
+    //O(n^2)
     // int currDiameter = lHeigth + rHeigth + 1;
 
     // int lDiameter = DiameterCalc(root->left);
     // int rDiameter = DiameterCalc(root->right);
 
-    // return max(currDiameter,max(lDiameter,rDiameter));
+    // return max(currDiameter,max(lDiameter,rDiameter)); 
+
+    // O(n)
     ans= max(ans,1+lHeigth+rHeigth);
     return 1 + max(lHeigth,rHeigth);
 }
