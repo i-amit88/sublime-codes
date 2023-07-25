@@ -71,7 +71,16 @@ void levelorder(node* root){
         }
 }
 
-int  main(){
+int32_t  main(){
+
+       /*    1
+           /  \
+           2   3
+          / \ / \
+          4 5 6  7
+        */
+
+
     node* root=new node(1);
     root->left=new node(2);
     root->right=new node(3);
