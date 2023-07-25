@@ -1,1 +1,1 @@
-fclose(filep);
+    root->right->left=new Node(6);
