@@ -16,23 +16,37 @@ struct Node{
 
 void rightView(Node* root){
     if(root == __null) return;
-
-    queue<Node*> q;
-    q.push(root);
-
-    while (!q.empty())
-    {
-        int n = q.size();
-        for (int i = 0; i < n; i++)
-        {
-            Node* curr = q.front();
-            q.pop();
-
-            if(i == n-1) cout<<curr->data<<" ";
-            if(curr->left != __null) q.push(curr->left);
-            if(curr->right != __null) q.push(curr->right);
-        }
+    cout<<root->data<<" ";
+    
+    if(root->right != NULL) {
+        // cout<<root->right->data<<" ";
+        rightView(root->right);
     }
+    else if (root->left != NULL)
+    {
+        // cout<<root->left->data;
+        rightView(root->left);
+    }
+
+    // queue<Node*> q;
+    // q.push(root);
+
+    // while (!q.empty())
+    // {
+    //     int n = q.size();
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         Node* curr = q.front();
+    //         q.pop();
+
+    //         if(i == n-1) cout<<curr->data<<" ";
+    //         if(curr->left != __null) q.push(curr->left);
+    //         if(curr->right != __null) q.push(curr->right);
+    //     }
+    // }
+
+
+    
 }
 
 
