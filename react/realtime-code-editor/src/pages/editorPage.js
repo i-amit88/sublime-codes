@@ -1,17 +1,60 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Client from '../Components/Client';
 import { Editor } from '../Components/Editor';
+import { initSocket } from '../socket';
+import ACTIONS from '../Actions'
+import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+
 
 const EditorPage = () => {
-  const [client,setClient] = useState([{
-    socketID:1,
-    username:'Rakesh K',
-  },{
-    socketID:2,
-    username:'John Doe',
+
+
+
+  const socketRef = useRef(null);
+
+  const location = useLocation();
+  const { roomId } = useParams();
+  const reactNavigator = useNavigate();
+
+  const [client, setClient] = useState([{
+    socketID: 1,
+    username: 'Rakesh K',
+  }, {
+    socketID: 2,
+    username: 'John Doe',
   },]);
 
-  
+
+  useEffect(() => {
+    const init = async () => {
+      socketRef.current = await initSocket();  // await because  initSocket is async and to accept promise
+
+      socketRef.current.on('connect_error', (err) => handleErrors(err));
+      socketRef.current.on('connect_failed', (err) => handleErrors(err));
+
+      
+      function handleErrors(e) {
+        console.log('socket error', e);
+        toast.error('Socket connection failed , try again later.');
+        reactNavigator('/');
+      }
+
+      socketRef.current.emit(ACTIONS.JOIN, {
+        roomId,
+        username: location.state?.username,
+      });
+    }
+
+    init();
+  }, []);
+
+  if (!location.state) {
+    return <Navigate to='/' />
+  }
+
+
+
   return (
     <div className='mainWrap'>
       <div className="aside">
@@ -23,7 +66,7 @@ const EditorPage = () => {
           <div className="clientsList">
             {
               client.map((client) => {
-                 return <Client key={client.socketID} username={client.username}/>
+                return <Client key={client.socketID} username={client.username} />
               })
             }
           </div>
