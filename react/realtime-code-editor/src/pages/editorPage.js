@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Client from '../Components/Client';
-import { Editor } from '../Components/Editor';
-import { initSocket } from '../socket';
-import ACTIONS from '../Actions'
+import Client from '../Components/Client.jsx';
+import { Editor } from '../Components/Editor.jsx';
+import { initSocket } from '../socket.js';
+import ACTIONS from '../Actions.js'
 import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
@@ -33,7 +33,7 @@ const EditorPage = () => {
       socketRef.current.on('connect_error', (err) => handleErrors(err));
       socketRef.current.on('connect_failed', (err) => handleErrors(err));
 
-      
+
       function handleErrors(e) {
         console.log('socket error', e);
         toast.error('Socket connection failed , try again later.');

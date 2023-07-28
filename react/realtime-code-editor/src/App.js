@@ -2,8 +2,8 @@ import "./App.css";
 import React from 'react'
 
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Home from './pages/Home'
-import EditorPage from './pages/editorPage'
+import Home from './pages/Home.js'
+import EditorPage from './pages/editorPage.js'
 import { Toaster } from "react-hot-toast";
 
 function App() {
