@@ -17,13 +17,7 @@ const EditorPage = () => {
   const { roomId } = useParams();
   const reactNavigator = useNavigate();
 
-  const [client, setClient] = useState([{
-    socketID: 1,
-    username: 'Rakesh K',
-  }, {
-    socketID: 2,
-    username: 'John Doe',
-  },]);
+  const [client, setClient] = useState([]);
 
 
   useEffect(() => {
@@ -42,9 +36,26 @@ const EditorPage = () => {
 
       socketRef.current.emit(ACTIONS.JOIN, {
         roomId,
-        username: location.state?.username,
+        username: location.state.username,
       });
-    }
+
+      socketRef.current.on(ACTIONS.JOINED,({clients,username,socketID})=>{
+          if(username !== location.state?.username){
+            toast.success(`${username} joined the room`);
+            console.log(`${username} joined`);
+          }
+
+          console.log('hello from server');
+          console.log('username is ',username)
+          console.log('socketId  is ',socketID)
+          console.log('editor page clients is ', clients);
+          setClient(clients);
+      });
+
+      console.log('hello from server');
+
+    };
+
 
     init();
   }, []);
@@ -54,8 +65,8 @@ const EditorPage = () => {
   }
 
 
-
   return (
+    
     <div className='mainWrap'>
       <div className="aside">
         <div className="asideInner">
