@@ -1,0 +1,82 @@
+.chatPage{
+    background: rgb(31,29, 29);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatContainer{
+    background-color: white;
+    height: 80%;
+    width: 50%;
+}
+
+.header{
+    background-color: crimson;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header >h2{
+    font-size: 1.5vmax;
+    font-family: "Poppins";
+    color: white;
+    margin: 1.5vmax;
+}
+.header img{
+    margin: 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.header >img:hover{
+    transform: scale(1.2);
+}
+.chatBox{
+
+    height: 75%;
+    display: flex;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.inputBox{
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#chatInput{
+    width: 80%;
+    border: none;
+    box-sizing: border-box;
+    padding: 1.5vmax;
+    background-color: gainsboro;
+    outline: none;
+    border-top: 0.2vmax solid rgb(51, 51, 51);
+    font-size: 1.2vmax;
+    font-family: "Poppins";
+}
+
+.sendBtn{
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 20%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.sendBtn > img{
+    width: 3vmax;
+    filter: brightness(100) invert();
+    transition: all 0.3s;
+}
+.sendBtn:hover{
+    background-color: rgb(126, 10, 33);
+}
+.sendBtn:hover img{
+    transform: translateX(10px);
+}

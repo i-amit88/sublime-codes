@@ -1,0 +1,26 @@
+.messageBox{
+    /* width: 40%; */
+    display:inline-block;
+    background-color: gainsboro;
+    padding: 1vmax;
+    clear: both;
+    font-size: 1.2vmax;
+    font-family: 'Poppins';
+    margin: 1vmax;
+    border-radius: 0.5vmax;
+}
+
+.right{
+    float: right;
+    background-color: crimson;
+    color: white;
+    text-align: right;
+
+}
+
+.left{
+    float: left;
+    background-color: rgb(196, 255, 184);
+    text-align: left;
+
+}

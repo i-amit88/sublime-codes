@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap');
+
+.joinPage{
+    background: rgb(31,29, 29);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.JoinContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.JoinContainer > img{
+    width: 10vw;
+}
+.JoinContainer > h1{
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 30vw;
+    border-bottom: 0.2vw solid white;
+    text-align: center;
+    padding: 1vw;
+    box-sizing: border-box;
+
+}
+
+#joinInput{
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    margin: 2vmax;
+    box-sizing: border-box;   
+}
+
+.joinBtn{
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-family: "Poppins";
+    outline: none;
+    font-size: 1.2vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+.joinBtn:hover{
+    background-color: rgb(150, 9, 37);
+}
